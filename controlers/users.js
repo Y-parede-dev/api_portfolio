@@ -25,7 +25,13 @@ exports.getOneAccount = (req, res, next) => {
                     res.status(404).json({message:'GET EST BOGGER'});
                     throw err;
                 }else{
-                    res.status(200).json({message:'tout est ok sur le get one account', result});
+                    if(result<1){
+                        res.status(404).json({message:"aucun user avec cet ID"});
+                        return;
+                    }else{
+                        res.status(200).json({message:'tout est ok sur le get one account', result});
+
+                    }
                     /*** Déboguage ***/ 
                     console.log(result);
                 };
@@ -46,6 +52,7 @@ exports.getAccount = (req, res, next) => {
                     res.status(200).json({message:'tout est ok sur le get all account', result});
                     /*** Déboguage ***/ 
                     console.log(result);
+                    console.log(result.length);
                 };
             }
         )
@@ -141,6 +148,7 @@ exports.putAccount = (req, res, next) => {
                         if(reqUserModif.age){
                             dataBase.query(`UPDATE users set users.age = "${reqUserModif.age}" WHERE users.id=${reqUserModif.id}`)
                         }
+                        // NE PAS OUBLIER LA VERIF DU MAIL 
                         if(reqUserModif.mail){
                             dataBase.query(`UPDATE users set users.mail = "${reqUserModif.mail}" WHERE users.id=${reqUserModif.id}`)
                         }
@@ -163,7 +171,6 @@ exports.putAccount = (req, res, next) => {
                                     }
                                 }
                             })
-                            
                         }
                         res.status(200).json({message:'utilisateur modifier'});
                     }else{

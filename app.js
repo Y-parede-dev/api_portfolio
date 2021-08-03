@@ -37,6 +37,7 @@ app.use((req, res, next) => {
   });
 
 app.use(express.json());
+
 app.use('/api/assets', express.static(path.join(__dirname, "assets")));
 app.use("/api/profil", usersRoutes);
 app.use("/api/projects", projectsRoutes);
