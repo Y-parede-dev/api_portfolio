@@ -2,7 +2,7 @@
 
 ></br>***DOCUMENTATION API POUR PORTE FOLIO***
 </br></br>
->Cette API a pour but de vous aider a créé leur propre porte-folio, elle s'associe très bien avec une base de données mySql.
+>Cette API a pour but de vous aider a crée votre propre porte-folio, elle est fournie avec une base de données mySql.
 </br>
 Si vous rencontrez le moindre problème :</br>&nbsp;&nbsp;- je vous invite à taper votre problème dans la section pull request n'hésiter pas à y introduire des screens shot de votre souci ainsi que les appels API que vous tentez de faire.
 </br></br>
@@ -26,7 +26,7 @@ Tout dabord commencer par ouvrir votre phpmyadmin, si vous ne l'avez pas install
 ### je vous invite a télécharger la base de donnée préalablement crée pour vous en cliquant sur le lien suivant :</br>
 
 [download DATABASE](./assets/fichier_doc/Database_pf.zip)</br>
-<a href="assets/fichier_doc/Database_pf.zip" download>DD</a>
+
 ### une fois fait ouvrez votre phpMyAdmin
 
 ></br>conseil utile :</br></br>ne rester pas sur l'utilisateur de base qui doit etre : Root </br>crée plutot un utilisateur avec les privileges directement sur phpMyAdmin vous trouverais un tuto ici une fois fait deconecter vous de ROOT et passer sur votre profil</br></br>
@@ -35,10 +35,12 @@ sur phpMyAdmin dans la barre de navigation en haut cliquer sur importer base de 
 ![img.1](assets/images/doc/doc.import.1.png)</br></br>
 cliquez ensuite sur choisir un fichier charger le fichier que vous avez décompresser plus tot</br></br>
 ![img.2](assets/images/doc/doc.import.2.png)</br></br>
-nommez votre base de donnée et cliquez sur créer</br>
-vous allez tomber sur la création d'une table que nous nomerons ``` users ``` et appliquerons ``` 6 ``` colones voir l'image ci-dessous</br>
-![img.3](assets/images/doc/doc.newTable.1.png)</br></br>
 cliquez sur ``` Exécuter ``` a droite de la page </br>
+![img.3](assets/images/doc/doc.import.3.png)</br></br>
+Vous voila avec la base de donnée crée vous devriez avoir une page comme cet image</br></br>
+![img.3](assets/images/doc/doc.import.4.png)</br></br>
+
+si vous le souhaitez vous pouvez observer 2 tables ` users ` & ` projects `
 
 ### En ligne de commande
 
@@ -53,4 +55,3 @@ cliquez sur ``` Exécuter ``` a droite de la page </br>
 |   test    |   test    |   test    |   Aucun body n'est requis     |   :-:     |
 |   test    |   test    |   test    |   :-:     |   :-:     |
 |   ---     |           :-:             |   ---              |   :-:                        |   :-:     |
-
