@@ -4,7 +4,7 @@
 </br></br>
 >Cette API a pour but de vous aider a crée votre propre porte-folio, elle est fournie avec une base de données mySql.
 </br>
-Si vous rencontrez le moindre problème :</br>&nbsp;&nbsp;- je vous invite à taper votre problème dans la section pull request n'hésiter pas à y introduire des screens shot de votre souci ainsi que les appels API que vous tentez de faire.
+Si vous rencontrez le moindre problème :</br>&nbsp;&nbsp;- je vous invite à taper votre problème dans la section pull request n'hésiter pas à y introduire des screens shoot de votre souci ainsi que les appels API que vous tentez de faire.
 </br></br>
 
 </br>
@@ -34,13 +34,13 @@ Tout dabord commencer par ouvrir votre phpmyadmin, si vous ne l'avez pas install
 ></br> :thought_balloon: conseil utile :</br></br>ne rester pas sur l'utilisateur de base qui doit etre : Root </br>crée plutot un utilisateur avec les privileges directement sur phpMyAdmin vous trouverais un tuto ici une fois fait deconecter vous de ROOT et passer sur votre profil</br></br>
 
 sur phpMyAdmin dans la barre de navigation en haut cliquer sur importer base de données (img.1)</br></br>
-![img_choise_file](https://github.com/Y-parede-dev/porte-folio-v1.0-backend/blob/v_1.0.0/assets/images/doc/doc_start.PNG?raw=true)</br></br>
+![img_choise_file](https://github.com/Y-parede-dev/porte-folio-v1.0-backend/blob/master/assets/images/doc/doc_start.PNG?raw=true)</br></br>
 cliquez ensuite sur choisir un fichier charger le fichier que vous avez décompresser plus tot</br></br>
-![img_imp_file](https://github.com/Y-parede-dev/porte-folio-v1.0-backend/blob/v_1.0.0/assets/images/doc/doc_import_2.png?raw=true)</br></br>
+![img_imp_file](https://github.com/Y-parede-dev/porte-folio-v1.0-backend/blob/master/assets/images/doc/doc_import_2.png?raw=true)</br></br>
 cliquez sur ``` Exécuter ``` a droite de la page</br></br>
-![img_imp_file](https://github.com/Y-parede-dev/porte-folio-v1.0-backend/blob/v_1.0.0/assets/images/doc/doc_import_3.png?raw=true)</br></br>
+![img_imp_file](https://github.com/Y-parede-dev/porte-folio-v1.0-backend/blob/master/assets/images/doc/doc_import_3.png?raw=true)</br></br>
 Vous voila avec la base de donnée crée vous devriez avoir une page comme cet image</br></br>
-![img_good_file](https://github.com/Y-parede-dev/porte-folio-v1.0-backend/blob/v_1.0.0/assets/images/doc/doc_good_phase.PNG?raw=true)</br></br>
+![img_good_file](https://github.com/Y-parede-dev/porte-folio-v1.0-backend/blob/master/assets/images/doc/doc_good_phase.PNG?raw=true)</br></br>
 vous pouvez observer 2 tables ` users ` & ` projects `
 
 ### En ligne de commande
@@ -73,11 +73,19 @@ puis tapez ` npm init ` puis ` npm init `</br>
 les dépendences télécharger nous pouvons passez a la suite
 </br>
 
-## 4. `  `
+## 4. ` Parametrage fichier .env `
+
+</br> Repéré le fichier nomé ` .exemple.env ` renomé le en ` .env `</br>
+ouvrer le avec votre éditeur de code favori pour ma part c'est ` vsCode ` une fois dedans remplisser les informations nécessaire puis enregistrer ` ctrl+s ` dans ` vsCode `</br>
+a se stade si dans votre cmd vous tapez la commande ` npm run dev ` (ou ` yarn dev ` si yarn est installer sur votre machine)</br>
+vous devriez avoir un message comme ça:</br>
+![img_good_file](https://github.com/Y-parede-dev/porte-folio-v1.0-backend/blob/master/assets/images/doc/connexion_good.PNG?raw=true)</br></br>
+
+
 |   VERB    |       point d'accés       |   corp requette    |   type de reponse attendu    |   fonction     |
 |   ---     |           :-:             |   ---            |   :-:                        |   :-:     |
-|   **POST**    |   /api/profil/sigup       |   ```{``` </br>```"nom":"string",``` </br> ```"prenom":"string",``` </br> ```"mail":"email",``` </br> ```"pass":"string",``` </br> ```"age":number```</br>```}```    |   status(200) : creation de l'utilisateur dans la bdd </br>si probleme</br>status(404): le probleme sera marque dans la reponse HTTP       |   Création d'un utlisateur avec :</br>- mot de passe sécurise et haché </br> - email valide(votre@mail.ext)      |
-|   **POST**    |   /api/profil/login    |   ```{``` </br> ```"mail":"email",``` </br> ```"pass":"string",```</br>```}```    |status(200): retourne un jeton token</br>status(400):  retourne une erreur mail ou mot de pass|   se connecte a un profil utilisateur     |
+|   **POST**    |   /api/profil/sigup       |   { </br>```"nom" ``` : ``` "string"```, </br> ```"prenom" ``` : ``` "string"```, </br> ```"mail" ``` : ``` "email"```, </br> ```"pass" ``` : ``` "string"```, </br> ```"age" ``` : ``` number```</br>}    |   status(200) : creation de l'utilisateur dans la bdd </br>si probleme</br>status(404): le probleme sera marque dans la reponse HTTP       |   Création d'un utlisateur avec :</br>- mot de passe sécurise et haché </br> - email valide(votre@mail.ext)      |
+|   **POST**    |   /api/profil/login    |   { </br> ```"mail" ``` : ``` "email"```,</br> ```"pass"``` : ```"string"```,</br>}    |status(200): retourne un jeton token</br>status(400):  retourne une erreur mail ou mot de pass|   se connecte a un profil utilisateur     |
 |   **GET**    |   /api/profil    |   Aucun body n'est requis    |   status(200): retourne tous les profils</br> status(404): retourne un message expliquant qu'il n'y a pas d'utilisateur enregistrer     |   retourne les utilisateurs enregistrer sur la BDD    |
 |   **GET**    |   /api/profil/:id    |   Aucun body n'est requis    |   :-:     |   :-:     |
 |   test    |   test    |   test    |   Aucun body n'est requis     |   :-:     |
