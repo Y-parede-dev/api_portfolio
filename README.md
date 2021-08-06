@@ -32,16 +32,15 @@ Tout dabord commencer par ouvrir votre phpmyadmin, si vous ne l'avez pas install
 ></br>conseil utile :</br></br>ne rester pas sur l'utilisateur de base qui doit etre : Root </br>crée plutot un utilisateur avec les privileges directement sur phpMyAdmin vous trouverais un tuto ici une fois fait deconecter vous de ROOT et passer sur votre profil</br></br>
 
 sur phpMyAdmin dans la barre de navigation en haut cliquer sur importer base de données (img.1)</br></br>
-<img alt="img_choise_file" src="assets/images/doc/doc_start.png"/></br></br>
-
+![img_choise_file](https://github.com/Y-parede-dev/porte-folio-v1.0-backend/blob/v_1.0.0/assets/images/doc/doc_start.PNG?raw=true)</br></br>
 cliquez ensuite sur choisir un fichier charger le fichier que vous avez décompresser plus tot</br></br>
-<img alt="img_choise_file" src="assets/images/doc/doc_import_2.png"/></br></br>
+![img_choise_file](https://github.com/Y-parede-dev/porte-folio-v1.0-backend/blob/v_1.0.0/assets/images/doc/doc_import_2.png?raw=true)</br></br>
 
 cliquez sur ``` Exécuter ``` a droite de la page </br>
-<img src="assets/images/doc/doc_import_3.png" /></br></br>
+![img_choise_file](https://github.com/Y-parede-dev/porte-folio-v1.0-backend/blob/v_1.0.0/assets/images/doc/doc_import_3.png?raw=true)</br></br>
 
 Vous voila avec la base de donnée crée vous devriez avoir une page comme cet image</br></br>
-<img src="assets/images/doc/doc_good_phase.png" /></br></br></br></br>
+![img_choise_file](https://github.com/Y-parede-dev/porte-folio-v1.0-backend/blob/v_1.0.0/assets/images/doc/doc_good_phase.png?raw=true)</br></br>
 
 si vous le souhaitez vous pouvez observer 2 tables ` users ` & ` projects `
 
@@ -50,7 +49,7 @@ si vous le souhaitez vous pouvez observer 2 tables ` users ` & ` projects `
     A VENIR
 
 |   VERB    |       point d'accés       |   corp requette    |   type de reponse attendu    |   fonction     |
-|   ---     |           :-:             |   ---              |   :-:                        |   :-:     |
+|   ---     |           :-:             |   ---            |   :-:                        |   :-:     |
 |   **POST**    |   /api/profil/sigup       |   ```{``` </br>```"nom":"string",``` </br> ```"prenom":"string",``` </br> ```"mail":"email",``` </br> ```"pass":"string",``` </br> ```"age":number```</br>```}```    |   status(200) : creation de l'utilisateur dans la bdd </br>si probleme</br>status(404): le probleme sera marque dans la reponse HTTP       |   Création d'un utlisateur avec :</br>- mot de passe sécurise et haché </br> - email valide(votre@mail.ext)      |
 |   **POST**    |   /api/profil/login    |   ```{``` </br> ```"mail":"email",``` </br> ```"pass":"string",```</br>```}```    |status(200): retourne un jeton token</br>status(400):  retourne une erreur mail ou mot de pass|   se connecte a un profil utilisateur     |
 |   **GET**    |   /api/profil    |   Aucun body n'est requis    |   status(200): retourne tous les profils</br> status(404): retourne un message expliquant qu'il n'y a pas d'utilisateur enregistrer     |   retourne les utilisateurs enregistrer sur la BDD    |
