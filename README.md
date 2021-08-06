@@ -81,7 +81,7 @@ Vous trouverez prochainement ici comment générer une clé ssh et la charger su
 
 vous avez besoin de node.js et de npm sur votre machine</br>
 dans l'inviter de commande placer vous sur votre repertoire que vous venez de clonez ` cd ./porte-folio-v1.0-backend `</br>
-puis tapez ` npm init ` puis ` npm init `</br>
+puis tapez ` npm init ` puis ` npm install `</br>
 </br>
 les dépendences télécharger nous pouvons passez a la suite
 </br>
