@@ -33,10 +33,13 @@ Tout dabord commencer par ouvrir votre phpmyadmin, si vous ne l'avez pas install
 
 sur phpMyAdmin dans la barre de navigation en haut cliquer sur importer base de données (img.1)</br></br>
 ![img.1](assets/images/doc/doc.import.1.png)</br></br>
+
 cliquez ensuite sur choisir un fichier charger le fichier que vous avez décompresser plus tot</br></br>
 ![img.2](assets/images/doc/doc.import.2.png)</br></br>
+
 cliquez sur ``` Exécuter ``` a droite de la page </br>
 ![img.3](assets/images/doc/doc.import.3.png)</br></br>
+
 Vous voila avec la base de donnée crée vous devriez avoir une page comme cet image</br></br>
 ![img.3](assets/images/doc/doc.import.4.png)</br></br>
 
