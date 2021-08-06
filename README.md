@@ -9,6 +9,18 @@ Si vous rencontrez le moindre problème :</br>&nbsp;&nbsp;- je vous invite à ta
 
 </br>
 
+## SOMMAIRE
+
+* [Instalation de la BDD](#1-instalation--de-la-bdd)</br>
+  * [Avec phpMyAdmin](#avec-phpmyadmin)</br>
+  * [En ligne de commande](#en-ligne-de-commande)</br>
+* [Clonage du repository](#2-clonage-du-repository)</br>
+  * [HTTPS](#https)</br>
+  * [SSH](#ssh)</br>
+* [Instalation des dépendences](#3-instalation-des-dépendances)</br>
+* [Paramétrage fichier .env](#4-parametrage-fichier-env)</br>
+* [Utiliser l'API](#5-utilser-lapi)</br>
+
 ## 1. ` Instalation  de la BDD `
 
 </br>
@@ -31,7 +43,7 @@ Tout dabord commencer par ouvrir votre phpmyadmin, si vous ne l'avez pas install
 
 ### une fois fait ouvrez votre phpMyAdmin
 
-></br> :thought_balloon: conseil utile :</br></br>ne rester pas sur l'utilisateur de base qui doit etre : Root </br>crée plutot un utilisateur avec les privileges directement sur phpMyAdmin vous trouverais un tuto ici une fois fait deconecter vous de ROOT et passer sur votre profil</br></br>
+></br> :thought_balloon: conseil utile :</br></br>ne rester pas sur l'utilisateur de base qui doit etre : Root </br>crée plutot un utilisateur avec les privileges directement sur phpMyAdmin vous trouverais un tuto ici (prochainement) une fois fait deconecter vous de ROOT et passer sur votre profil</br></br>
 
 sur phpMyAdmin dans la barre de navigation en haut cliquer sur importer base de données (img.1)</br></br>
 ![img_choise_file](https://github.com/Y-parede-dev/porte-folio-v1.0-backend/blob/master/assets/images/doc/doc_start.PNG?raw=true)</br></br>
@@ -49,7 +61,8 @@ vous pouvez observer 2 tables ` users ` & ` projects `
 
 ### 2. ` Clonage du repository `
 
->HTTPS
+## HTTPS
+
 >> placer vous dans votre environement de travail avec soit le terminal de vsCode ou directement en executan voutre cmd.exe en administrateur</br>
 puis tapez la commande : ` git clone https://github.com/Y-parede-dev/porte-folio-v1.0-backend.git`
 </br>
@@ -57,7 +70,8 @@ puis tapez la commande : ` git clone https://github.com/Y-parede-dev/porte-folio
 
 </br>
 
->SSH
+## SSH
+
 >> placer vous dans votre environement de travail avec soit le terminal de vsCode ou directement en executan voutre cmd.exe en administrateur</br>
 puis tapez la commande : ` git clone git@github.com:Y-parede-dev/porte-folio-v1.0-backend.git`</br>
 >>> :thought_balloon: pour utiliser le ssh vous devez avoir au préalable une clé ssh connecter a votre compte github</br>
@@ -78,7 +92,7 @@ les dépendences télécharger nous pouvons passez a la suite
 </br> Repéré le fichier nomé ` .exemple.env ` renomé le en ` .env `</br>
 ouvrer le avec votre éditeur de code favori pour ma part c'est ` vsCode ` une fois dedans remplisser les informations nécessaire puis enregistrer ` ctrl+s ` dans ` vsCode `</br>
 a se stade si dans votre cmd vous tapez la commande ` npm run dev ` (ou ` yarn dev ` si yarn est installer sur votre machine)</br>
-vous devriez avoir un message comme ça:</br></br>
+vous devriez avoir un message comme çi-dessous:</br></br>
 ![img_good_file](https://github.com/Y-parede-dev/porte-folio-v1.0-backend/blob/master/assets/images/doc/connexion_good.PNG?raw=true)</br>
 Félicitation vôtre API est préte a etre utiliser</br>
 
