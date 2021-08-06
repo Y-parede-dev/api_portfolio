@@ -66,7 +66,6 @@ vous pouvez observer 2 tables ` users ` & ` projects `
 >> placer vous dans votre environement de travail avec soit le terminal de vsCode ou directement en executan voutre cmd.exe en administrateur</br>
 puis tapez la commande : ` git clone https://github.com/Y-parede-dev/porte-folio-v1.0-backend.git`
 </br>
-</br>
 
 </br>
 
