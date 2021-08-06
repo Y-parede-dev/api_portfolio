@@ -1,4 +1,4 @@
-exports.requetteBddUser = (action, table, ...emplacement) => {
+/*exports.requetteBddUser = (action, table, ...emplacement) => {
     requeteSql = {
         action: action,
         table: table,
@@ -6,15 +6,15 @@ exports.requetteBddUser = (action, table, ...emplacement) => {
     }
     return(`${requeteSql.action} ${requeteSql.table} ${requeteSql.emplacement};`) 
 }
-
+*/
 class modelUser  {
-    constructor(nom, prenom, mail, age, pass, img_url, admin){
+    constructor(nom, prenom, mail, pass, img_url, age, admin){
         this.nom = nom;
         this.prenom = prenom;
         this.mail = mail;
-        this.age = age;
         this.pass = pass;
         this.img_url = img_url;
+        this.age = age;
         this.admin = admin;
     }
 }

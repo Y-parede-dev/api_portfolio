@@ -8,5 +8,7 @@ router.post('/', multer, projectCtrl.postNewProjecs);
 router.get('/', projectCtrl.getAllProjects);
 router.get('/:id', projectCtrl.getOneProject);
 router.put('/:id', multer, projectCtrl.uppdateProject);
+router.delete('/:id', multer, projectCtrl.deleteProject);
+
 
 module.exports = router;
