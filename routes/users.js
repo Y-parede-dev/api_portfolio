@@ -10,8 +10,8 @@ router.post('/signup', userControler.createAccount);
 router.post('/login', userControler.login);
 router.get('/', userControler.getAccount);
 router.get('/:id', userControler.getOneAccount);
-router.put('/:id', /*auth,*/multer, userControler.putAccount);
-router.delete('/:id', /*auth,*/multer, userControler.deleteAccount);
+router.put('/:id', auth, multer, userControler.putAccount);
+router.delete('/:id', auth, multer, userControler.deleteAccount);
 
 
 module.exports = router;

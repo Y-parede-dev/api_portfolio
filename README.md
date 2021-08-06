@@ -1,4 +1,4 @@
-# API pour porte folio
+bbb# API pour porte folio
 
 ></br>***DOCUMENTATION API POUR PORTE FOLIO***
 </br></br>
@@ -7,7 +7,9 @@
 Si vous rencontrez le moindre problème :</br>&nbsp;&nbsp;- je vous invite à taper votre problème dans la section pull request n'hésiter pas à y introduire des screens shot de votre souci ainsi que les appels API que vous tentez de faire.
 </br></br>
 
-## Premiére étape
+</br>
+
+## Premiére étape ` Instalation  de la BDD `
 
 </br>
 
@@ -16,7 +18,7 @@ Si vous rencontrez le moindre problème :</br>&nbsp;&nbsp;- je vous invite à ta
 </br>
 Tout dabord commencer par ouvrir votre phpmyadmin, si vous ne l'avez pas installer je vous invite à télecharger l'un des programes suivant </br></br>
 
-></br>si vous etes sous windows :</br></br>
+></br> :pushpin: </br></br> si vous etes sous windows :</br></br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[wamp](https://www.wampserver.com/)</br></br>
 >si vous etes sous mac (fonctione aussi sous windows) :</br></br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[mamp](https://www.mamp.info/en/downloads/)</br></br>
@@ -29,24 +31,38 @@ Tout dabord commencer par ouvrir votre phpmyadmin, si vous ne l'avez pas install
 
 ### une fois fait ouvrez votre phpMyAdmin
 
-></br>conseil utile :</br></br>ne rester pas sur l'utilisateur de base qui doit etre : Root </br>crée plutot un utilisateur avec les privileges directement sur phpMyAdmin vous trouverais un tuto ici une fois fait deconecter vous de ROOT et passer sur votre profil</br></br>
+></br> :pushpin: </br> conseil utile :</br></br>ne rester pas sur l'utilisateur de base qui doit etre : Root </br>crée plutot un utilisateur avec les privileges directement sur phpMyAdmin vous trouverais un tuto ici une fois fait deconecter vous de ROOT et passer sur votre profil</br></br>
 
 sur phpMyAdmin dans la barre de navigation en haut cliquer sur importer base de données (img.1)</br></br>
 ![img_choise_file](https://github.com/Y-parede-dev/porte-folio-v1.0-backend/blob/v_1.0.0/assets/images/doc/doc_start.PNG?raw=true)</br></br>
 cliquez ensuite sur choisir un fichier charger le fichier que vous avez décompresser plus tot</br></br>
-![img_choise_file](https://github.com/Y-parede-dev/porte-folio-v1.0-backend/blob/v_1.0.0/assets/images/doc/doc_import_2.png?raw=true)</br></br>
-
-cliquez sur ``` Exécuter ``` a droite de la page </br>
-![img_choise_file](https://github.com/Y-parede-dev/porte-folio-v1.0-backend/blob/v_1.0.0/assets/images/doc/doc_import_3.png?raw=true)</br></br>
-
+![img_imp_file](https://github.com/Y-parede-dev/porte-folio-v1.0-backend/blob/v_1.0.0/assets/images/doc/doc_import_2.png?raw=true)</br></br>
+cliquez sur ``` Exécuter ``` a droite de la page</br></br>
+![img_imp_file](https://github.com/Y-parede-dev/porte-folio-v1.0-backend/blob/v_1.0.0/assets/images/doc/doc_import_3.png?raw=true)</br></br>
 Vous voila avec la base de donnée crée vous devriez avoir une page comme cet image</br></br>
-![img_choise_file](https://github.com/Y-parede-dev/porte-folio-v1.0-backend/blob/v_1.0.0/assets/images/doc/doc_good_phase.png?raw=true)</br></br>
-
-si vous le souhaitez vous pouvez observer 2 tables ` users ` & ` projects `
+![img_good_file](https://github.com/Y-parede-dev/porte-folio-v1.0-backend/blob/v_1.0.0/assets/images/doc/doc_good_phase.PNG?raw=true)</br></br>
+vous pouvez observer 2 tables ` users ` & ` projects `
 
 ### En ligne de commande
 
     A VENIR
+
+## Clonage du repository
+
+>HTTPS
+>> placer vous dans votre environement de travail avec soit le terminal de vsCode ou directement en executan voutre cmd.exe en administrateur</br>
+puis tapez la commande : ` git clone https://github.com/Y-parede-dev/porte-folio-v1.0-backend.git`
+</br>
+</br>
+
+</br>
+
+>SSH
+>> placer vous dans votre environement de travail avec soit le terminal de vsCode ou directement en executan voutre cmd.exe en administrateur</br>
+puis tapez la commande : ` git clone git@github.com:Y-parede-dev/porte-folio-v1.0-backend.git`</br>
+>>> :pushpin: pour utiliser le ssh vous devez avoir au préalable une clé ssh connecter a votre compte github</br>
+Vous trouverez prochainement ici comment générer une clé ssh et la charger sur github</br>
+</br>
 
 |   VERB    |       point d'accés       |   corp requette    |   type de reponse attendu    |   fonction     |
 |   ---     |           :-:             |   ---            |   :-:                        |   :-:     |
