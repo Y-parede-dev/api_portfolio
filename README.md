@@ -1,10 +1,8 @@
 # API pour porte folio
 
-></br>***DOCUMENTATION API POUR PORTE FOLIO***
-</br></br>
->Cette API a pour but de vous aider a crée votre propre porte-folio, elle est fournie avec une base de données mySql.
-</br>
-Si vous rencontrez le moindre problème :</br>&nbsp;&nbsp;- je vous invite à taper votre problème dans la section pull request n'hésiter pas à y introduire des screens shoot de votre souci ainsi que les appels API que vous tentez de faire.
+></br>***DOCUMENTATION API POUR PORTE FOLIO***</br></br>
+>Cette API a pour but de vous aider a crée votre propre porte-folio, elle est fournie avec une base de données mySql.</br>
+>Si vous rencontrez le moindre problème :</br>&nbsp;&nbsp;- je vous invite à taper votre problème dans la section pull request n'hésiter pas à y introduire des screens shoot de votre souci ainsi que les appels API que vous tentez de faire.
 </br></br>
 
 </br>
