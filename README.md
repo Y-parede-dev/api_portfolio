@@ -59,7 +59,7 @@ vous pouvez observer 2 tables ` users ` & ` projects `
 
     A VENIR
 
-### 2. ` Clonage du repository `
+## 2. ` Clonage du repository `
 
 ## HTTPS
 
