@@ -9,7 +9,7 @@ Si vous rencontrez le moindre problème :</br>&nbsp;&nbsp;- je vous invite à ta
 
 </br>
 
-## Premiére étape ` Instalation  de la BDD `
+## 1. ` Instalation  de la BDD `
 
 </br>
 
@@ -47,7 +47,7 @@ vous pouvez observer 2 tables ` users ` & ` projects `
 
     A VENIR
 
-## Clonage du repository
+### 2. ` Clonage du repository `
 
 >HTTPS
 >> placer vous dans votre environement de travail avec soit le terminal de vsCode ou directement en executan voutre cmd.exe en administrateur</br>
@@ -64,6 +64,16 @@ puis tapez la commande : ` git clone git@github.com:Y-parede-dev/porte-folio-v1.
 Vous trouverez prochainement ici comment générer une clé ssh et la charger sur github</br>
 </br>
 
+## 3. ` Instalation des dépendances `
+
+vous avez besoin de node.js et de npm sur votre machine</br>
+dans l'inviter de commande placer vous sur votre repertoire que vous venez de clonez ` cd ./porte-folio-v1.0-backend `</br>
+puis tapez ` npm init ` puis ` npm init `</br>
+</br>
+les dépendences télécharger nous pouvons passez a la suite
+</br>
+
+## 4. `  `
 |   VERB    |       point d'accés       |   corp requette    |   type de reponse attendu    |   fonction     |
 |   ---     |           :-:             |   ---            |   :-:                        |   :-:     |
 |   **POST**    |   /api/profil/sigup       |   ```{``` </br>```"nom":"string",``` </br> ```"prenom":"string",``` </br> ```"mail":"email",``` </br> ```"pass":"string",``` </br> ```"age":number```</br>```}```    |   status(200) : creation de l'utilisateur dans la bdd </br>si probleme</br>status(404): le probleme sera marque dans la reponse HTTP       |   Création d'un utlisateur avec :</br>- mot de passe sécurise et haché </br> - email valide(votre@mail.ext)      |
@@ -73,3 +83,5 @@ Vous trouverez prochainement ici comment générer une clé ssh et la charger su
 |   test    |   test    |   test    |   Aucun body n'est requis     |   :-:     |
 |   test    |   test    |   test    |   :-:     |   :-:     |
 |   ---     |           :-:             |   ---              |   :-:                        |   :-:     |
+
+© copyright [magin code](magin.code@gmail.com)
