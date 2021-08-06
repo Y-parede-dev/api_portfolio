@@ -32,16 +32,16 @@ Tout dabord commencer par ouvrir votre phpmyadmin, si vous ne l'avez pas install
 ></br>conseil utile :</br></br>ne rester pas sur l'utilisateur de base qui doit etre : Root </br>crée plutot un utilisateur avec les privileges directement sur phpMyAdmin vous trouverais un tuto ici une fois fait deconecter vous de ROOT et passer sur votre profil</br></br>
 
 sur phpMyAdmin dans la barre de navigation en haut cliquer sur importer base de données (img.1)</br></br>
-![img.1](assets/images/doc/doc.import.1.png)</br></br>
+![img.1](assets/images/doc/doc.import_1.png)</br></br>
 
 cliquez ensuite sur choisir un fichier charger le fichier que vous avez décompresser plus tot</br></br>
-![img.2](assets/images/doc/doc.import.2.png)</br></br>
+![img.2](assets/images/doc/doc.import_2.png)</br></br>
 
 cliquez sur ``` Exécuter ``` a droite de la page </br>
-![img.3](assets/images/doc/doc.import.3.png)</br></br>
+![img.3](assets/images/doc/doc.import_._3.png)</br></br>
 
 Vous voila avec la base de donnée crée vous devriez avoir une page comme cet image</br></br>
-![img.3](assets/images/doc/doc.import.4.png)</br></br>
+![img.4](assets/images/doc/doc.import_4.png)</br></br>
 
 si vous le souhaitez vous pouvez observer 2 tables ` users ` & ` projects `
 
