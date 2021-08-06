@@ -78,19 +78,38 @@ les dépendences télécharger nous pouvons passez a la suite
 </br> Repéré le fichier nomé ` .exemple.env ` renomé le en ` .env `</br>
 ouvrer le avec votre éditeur de code favori pour ma part c'est ` vsCode ` une fois dedans remplisser les informations nécessaire puis enregistrer ` ctrl+s ` dans ` vsCode `</br>
 a se stade si dans votre cmd vous tapez la commande ` npm run dev ` (ou ` yarn dev ` si yarn est installer sur votre machine)</br>
-vous devriez avoir un message comme ça:</br>
-![img_good_file](https://github.com/Y-parede-dev/porte-folio-v1.0-backend/blob/master/assets/images/doc/connexion_good.PNG?raw=true)</br></br>
+vous devriez avoir un message comme ça:</br></br>
+![img_good_file](https://github.com/Y-parede-dev/porte-folio-v1.0-backend/blob/master/assets/images/doc/connexion_good.PNG?raw=true)</br>
+Félicitation vôtre API est préte a etre utiliser</br>
 
+si vous souhaitez passer l'API en mode prod fermer le terminal et re-ouvrez le ( noubliez pas de vous replacer dans votre dossier ` porte-folio-v1.0-backend ` )</br>
+tapez ` npm run prod ` l'API tourne sous forever du coup si une requete plante le serveur se relancera de lui même
 
-|   VERB    |       point d'accés       |   corp requette    |   type de reponse attendu    |   fonction     |
+## 5. ` Utilser l'api `
+
+ROUTES USERS
+</br>
+
+|   VERB HTTP    |       point d'accés       |   corp requette    |   type de </br>reponse attendu    |   fonction     |
 |   ---     |           :-:             |   ---            |   :-:                        |   :-:     |
 |   **POST**    |   /api/profil/sigup       |   { </br>```"nom":"string",``` </br> ```"prenom":"string",``` </br> ```"mail":"email",``` </br> ```"pass":"string",``` </br> ```"age":number```</br>}    |   status(200) : creation de l'utilisateur dans la bdd </br>si probleme</br>status(404): le probleme sera marque dans la reponse HTTP       |   Création d'un utlisateur avec :</br>- mot de passe sécurise et haché </br> - email valide(votre@mail.ext)      |
 |   **POST**    |   /api/profil/login    |   { </br> ```"mail":"email",``` </br> ```"pass":"string",```</br>}    |status(200): retourne un jeton token</br>status(400):  retourne une erreur mail ou mot de pass|   se connecte a un profil utilisateur     |
-|   **POST**    |   /api/profil/login    |   { </br> ```"mail" ``` : ``` "email"```,</br> ```"pass"``` : ```"string"```,</br>}    |status(200): retourne un jeton token</br>status(400):  retourne une erreur mail ou mot de pass|   se connecte a un profil utilisateur     |
-|   **GET**    |   /api/profil    |   Aucun body n'est requis    |   status(200): retourne tous les profils</br> status(404): retourne un message expliquant qu'il n'y a pas d'utilisateur enregistrer     |   retourne les utilisateurs enregistrer sur la BDD    |
-|   **GET**    |   /api/profil/:id    |   Aucun body n'est requis    |   :-:     |   :-:     |
-|   test    |   test    |   test    |   Aucun body n'est requis     |   :-:     |
-|   test    |   test    |   test    |   :-:     |   :-:     |
-|   ---     |           :-:             |   ---              |   :-:                        |   :-:     |
+|   **GET**    |   /api/profil    |   Aucun body n'est requis    |   status(200): retourne tous les profils</br> status(404): retourne un message expliquant</br> qu'il n'y a pas d'utilisateur enregistrer     |   retourne les utilisateurs enregistrer sur la BDD    |
+|   **GET**    |   /api/profil/:id    |   Aucun body n'est requis    |   status(200): retourne le profil ciblé</br> status(404): retourne un message expliquant </br>qu'il n'y a pas d'utilisateur enregistrer avec cet id    |   retourne l'utilisateur ciblé     |
+|   **PUT**    |   /api/profil/:id    |   { </br>```"nom":"string",``` </br> ```"prenom":"string",``` </br> ```"mail":"email",``` </br> ```"pass":"string",``` </br> ```"age":number```,</br>```"img_url":string```</br>}    |    status(200): modifie les informations de l'utilisateur</br> status(400):retourne un message d'ereur    |   permet de modifier son profil,</br> ne pas oublier le token  dans le header de la requete    |
+|   **DELETE**    |    /api/profil/:id   |   Aucun body n'est requis mais ne pas oublier </br> le token dans le header   |  status(200): message indiquant que la req c'est bien passer</br>status(400): un message expliquant pourquois ça ne ses pas bien dérouler     |   suprime un utilisateur     |
 
+</br>
+ROUTES PROJECTS
+</br></br>
+
+|   VERB HTTP    |       point d'accés       |   corp requette    |   type de </br>reponse attendu    |   fonction     |
+|   ---     |           :-:             |   ---            |   :-:                        |   :-:     |
+|   **POST**    |   /api/projects    |   { </br>```"user_id":number,``` </br> ```"nom":"string",``` </br> ```"description":"string",``` </br> ```"lien":"string",``` </br> ```"img_url":number```</br>}    |status(200): retourne un message indiquant que tout c'est bien passer</br>status(400):  retourne une erreur expliquant pourqois |  crée un projects </br> ne pas oubliez le token dans le header    |
+|   **GET**    |   /api/projects    |   Aucun body n'est requis    |   status(200): retourne tous les project</br> status(404): retourne un message expliquant </br>qu'il n'y a pas de projets enregistrer     |   retourne les projets enregistrer sur la BDD    |
+|   **GET**    |   /api/projects/:id    |   Aucun body n'est requis    |   status(200): retourne le projet ciblé</br> status(404): retourne un message expliquant </br>qu'il n'y a pas de projet enregistrer avec cet id    |   retourne le projet ciblé     |
+|   **PUT**    |   /api/projects/:id    |   { </br> ```"nom":"string",``` </br> ```"description":"string",``` </br> ```"lien":"string",``` </br> ```"img_url":number```</br>}    |    status(200): modifie les informations d'un projet</br> status(400):retourne un message d'ereur expliquant pourqouis   |   permet de modifier un projet,</br> ne pas oublier le token  dans le header de la requete    |
+|   **DELETE**    |    /api/projects/:id   |   Aucun body n'est requis mais ne pas oublier </br> le token dans le header   |  status(200): message indiquant que la req c'est bien passer</br>status(400): un message expliquant pourquois ça ne ses pas bien dérouler     |   supprime un projet     |
+
+</br></br></br></br></br></br></br></br></br></br></br>
 © copyright [magin code](magin.code@gmail.com)
