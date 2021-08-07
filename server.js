@@ -50,4 +50,4 @@ server.on('listening', () => { //si tout est ok, ecoute l'adresse et on y ajoute
 });
 
 // on applique la fonction listen au server avec le port en argument
-server.listen(port);
+server.listen(port||process.env.PORT);
