@@ -16,7 +16,8 @@ const normalizePort = val => { //creation du port Normalizer
 };
 
 const port = normalizePort(process.env.PORT_SERVER);
-app.set('port', port);   // ajout du port sur app 
+const portDist = normalizePort(process.env.PORT);
+app.set('port',(portDist || port));   // ajout du port sur app 
 
 const errorHandler = error => {  // gestion des erreurs
   if (error.syscall !== 'listen') {
@@ -50,4 +51,4 @@ server.on('listening', () => { //si tout est ok, ecoute l'adresse et on y ajoute
 });
 
 // on applique la fonction listen au server avec le port en argument
-server.listen(port||process.env.PORT);
+server.listen(portDist || port);
