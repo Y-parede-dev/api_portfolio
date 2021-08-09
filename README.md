@@ -102,7 +102,7 @@ ROUTES USERS
 |   **GET**    |   /api/profil    |   Aucun body n'est requis    |   status(200): retourne tous les profils</br> status(404): retourne un message expliquant</br> qu'il n'y a pas d'utilisateur enregistrer     |   retourne les utilisateurs enregistrer dans la BDD    |
 |   **GET**    |   /api/profil/:id    |   Aucun body n'est requis    |   status(200): retourne le profil ciblé</br> status(404): retourne un message expliquant </br>qu'il n'y a pas d'utilisateur enregistrer avec cet id    |   retourne l'utilisateur ciblé     |
 |   **PUT**    |   /api/profil/:id    |   { </br>```"nom":"string",``` </br> ```"prenom":"string",``` </br> ```"mail":"email",``` </br> ```"pass":"string",``` </br> ```"age":number```,</br>```"img_url":string```</br>}    |    status(200): modifie les informations de l'utilisateur</br> status(400): retourne un message d'érreur    |   permet de modifier son profil,</br> ne pas oublier le token  dans le header de la requête    |
-|   **DELETE**    |    /api/profil/:id   |   Aucun body n'est requis mais ne pas oublier </br> le token dans le header   |  status(200): message indiquant que la requête c'est bien passer</br>status(400): un message expliquant pourquoi ça ne ses pas bien dérouler     |   supprime un utilisateur     |
+|   **DELETE**    |    /api/profil/:id   |   Aucun body n'est requis </br>mais ne pas oublier </br> le token dans le header   |  status(200): message indiquant que la requête c'est bien passer</br>status(400): un message expliquant pourquoi ça ne ses pas bien dérouler     |   supprime un utilisateur     |
 
 </br>
 ROUTES PROJECTS
