@@ -15,9 +15,9 @@ const normalizePort = val => { //creation du port Normalizer
   return false;
 };
 
-const port = normalizePort(process.env.PORT_SERVER);
+const port = normalizePort(process.env.MODE =='PROD'?process.env.DB_PORT:process.env.DB_PORT_LOCAL);
 const portDist = normalizePort(process.env.PORT);
-app.set('port',(portDist || port));   // ajout du port sur app 
+app.set('port',(portDist || port ));   // ajout du port sur app 
 
 const errorHandler = error => {  // gestion des erreurs
   if (error.syscall !== 'listen') {
