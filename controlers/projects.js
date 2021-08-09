@@ -26,8 +26,8 @@ exports.postNewProjecs = (req, res, next) => {
         const project = new Project(
             reqNewProject.user_id,
             reqNewProject.nom,
-            reqNewProject.lien,
             reqNewProject.description,
+            reqNewProject.lien,
             'notFound.png'
         );
         if(file){
