@@ -45,7 +45,7 @@ Puis, décompréssez le</br>
 ></br> :thought_balloon: Conseils utiles :</br></br>Ne pas rester sur l'utilisateur de base qui doit être : Root créée plutôt un utilisateur avec les privilèges directement sur Phpmyadmin.</br> Vous trouverez un tuto ici (prochainement) une fois fait déconnecter vous de ROOT et passer sur votre profil</br></br>
 
 Sur Phpmyadmin dans la barre de navigation en haut cliquée sur importer base de données (image.1)</br></br>
-![img_import](https://github.com/**Y-parede-dev/api_portfolio/blob/master/assets**/images/doc/doc_start.PNG?raw=true)</br></br>
+![img_import](https://github.com/Y-parede-dev/api_portfolio/blob/master/assets**/images/doc/doc_start.PNG?raw=true)</br></br>
 cliquez ensuite sur choisir un fichier chargé le fichier que vous avez décompressé plus tôt</br></br>
 ![img_choix_fichier](https://github.com/Y-parede-dev/api_portfolio/blob/master/assets/images/doc/doc_import_2.png?raw=true)</br></br>
 Cliquez sur ``` Exécuter ``` a droite de la page</br></br>
