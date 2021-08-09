@@ -45,13 +45,13 @@ Puis, décompréssez le</br>
 ></br> :thought_balloon: Conseils utiles :</br></br>Ne pas rester sur l'utilisateur de base qui doit être : Root créée plutôt un utilisateur avec les privilèges directement sur Phpmyadmin.</br> Vous trouverez un tuto ici (prochainement) une fois fait déconnecter vous de ROOT et passer sur votre profil</br></br>
 
 Sur Phpmyadmin dans la barre de navigation en haut cliquée sur importer base de données (image.1)</br></br>
-![img_import](https://github.com/Y-parede-dev/portfolio-v1.0-backend/blob/master/assets/images/doc/doc_start.PNG?raw=true)</br></br>
+![img_import](https://github.com/**Y-parede-dev/api_portfolio/blob/master/assets**/images/doc/doc_start.PNG?raw=true)</br></br>
 cliquez ensuite sur choisir un fichier chargé le fichier que vous avez décompressé plus tôt</br></br>
-![img_choix_fichier](https://github.com/Y-parede-dev/portfolio-v1.0-backend/blob/master/assets/images/doc/doc_import_2.png?raw=true)</br></br>
+![img_choix_fichier](https://github.com/Y-parede-dev/api_portfolio/blob/master/assets/images/doc/doc_import_2.png?raw=true)</br></br>
 Cliquez sur ``` Exécuter ``` a droite de la page</br></br>
-![img_Executer](https://github.com/Y-parede-dev/portfolio-v1.0-backend/blob/master/assets/images/doc/doc_import_3.png?raw=true)</br></br>
+![img_Executer](https://github.com/Y-parede-dev/api_portfolio/blob/master/assets/images/doc/doc_import_3.png?raw=true)</br></br>
 Vous voilà avec la base de données créée vous devriez avoir une page comme cette image</br></br>
-![img_Good](https://github.com/Y-parede-dev/portfolio-v1.0-backend/blob/master/assets/images/doc/doc_good_phase.PNG?raw=true)</br></br>
+![img_Good](https://github.com/Y-parede-dev/api_portfolio/blob/master/assets/images/doc/doc_good_phase.PNG?raw=true)</br></br>
 vous pouvez observer 2 tables ` users ` & ` projects `
 
 ### En ligne de commande
@@ -87,7 +87,7 @@ Les dépendances téléchargées nous pouvons passer à la suite
 
 </br> Repéré le fichier nommé ` .exemple env ` renommé l'en ` .env `</br> ouvrer l'avec votre éditeur de code favori pour ma part c'est ` vs Code ` une fois dedans remplissez les informations nécessaires puis enregistrer ` ctrl+s ` dans ` vs Code `</br> a ce stade si dans votre cmd vous tapez la commande ` npm run dev ` (ou ` yarn dev ` si yarn est installé sur votre machine)</br> vous devriez avoir un message comme ci-dessous  :</br></br>
 
-![img_good_file](https://github.com/Y-parede-dev/portfolio-v1.0-backend/blob/master/assets/images/doc/connexion_good.PNG?raw=true)</br>
+![img_good_file](https://github.com/Y-parede-dev/api_portfolio/blob/master/assets/images/doc/connexion_good.PNG?raw=true)</br>
 Félicitation votre API est prête à être utilisé</br>
 
 ## 5. ` Utilsez l'api `
