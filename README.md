@@ -85,7 +85,7 @@ Les dépendances téléchargées nous pouvons passer à la suite
 
 ## 4. ` Paramétrage fichier .env `
 
-</br> Repéré le fichier nommé ` .exemple env ` renommé l'en ` .env `</br> ouvrer l'avec votre éditeur de code favori pour ma part c'est ` vs Code ` une fois dedans remplissez les informations nécessaires puis enregistrer ` ctrl+s ` dans ` vs Code `</br> a ce stade si dans votre cmd vous tapez la commande ` npm run de ` (ou ` yarn de ` si yarn est installé sur votre machine)</br> vous devriez avoir un message comme ci-dessous  :</br></br>
+</br> Repéré le fichier nommé ` .exemple env ` renommé l'en ` .env `</br> ouvrer l'avec votre éditeur de code favori pour ma part c'est ` vs Code ` une fois dedans remplissez les informations nécessaires puis enregistrer ` ctrl+s ` dans ` vs Code `</br> a ce stade si dans votre cmd vous tapez la commande ` npm run dev ` (ou ` yarn dev ` si yarn est installé sur votre machine)</br> vous devriez avoir un message comme ci-dessous  :</br></br>
 
 ![img_good_file](https://github.com/Y-parede-dev/porte-folio-v1.0-backend/blob/master/assets/images/doc/connexion_good.PNG?raw=true)</br>
 Félicitation votre API est prête à être utilisé</br>
