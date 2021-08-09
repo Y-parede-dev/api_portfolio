@@ -33,7 +33,7 @@ Tout d'abord commencer par ouvrir votre Phpmyadmin, si vous ne l'avez pas instal
 >si vous êtes sous mac (fonctione aussi sous windows) :</br></br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[mamp](https://www.mamp.info/en/downloads/)</br></br>
 >si vous êtes sous linux :</br></br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[lamp](https://www.tech2tech.fr/installation-de-lamp-sur-ubuntu-20-04/)</br></br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[lamp](https://www.tech2tech.fr/installation-de-lamp-sur-ubuntu-20-04/)</br> </br>
 
 ### je vous invite à télécharger la base de données préalablement créée pour vous en cliquant sur le lien suivant :</br>
 
