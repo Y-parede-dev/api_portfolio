@@ -90,8 +90,6 @@ Les dépendances téléchargées nous pouvons passer à la suite
 ![img_good_file](https://github.com/Y-parede-dev/porte-folio-v1.0-backend/blob/master/assets/images/doc/connexion_good.PNG?raw=true)</br>
 Félicitation votre API est prête à être utilisé</br>
 
-si vous souhaitez passer l'API en mode prod fermer le terminal et re ouvrez-le ( n'oubliez pas de vous replacer dans votre dossier ` porte-folio v1.0-backend ` )</br>
-
 ## 5. ` Utilsez l'api `
 
 ROUTES USERS
