@@ -62,14 +62,14 @@ vous pouvez observer 2 tables ` users ` & ` projects `
 
 ## HTTPS
 
->> Placez-vous dans votre environnement de travail avec le terminal vs Code ou directement en exécutant votre cmd.exe en administrateur</br> puis tapez la commande : ` git clone https://github.com/Y-parede-dev/portfolio-v1.0-backend.git `
+>> Placez-vous dans votre environnement de travail avec le terminal vs Code ou directement en exécutant votre cmd.exe en administrateur</br> puis tapez la commande : `git init` puis ` git clone https://github.com/Y-parede-dev/portfolio-v1.0-backend.git `
 </br>
 
 </br>
 
 ## SSH
 
->> Placez-vous dans votre environnement de travail avec le terminal vs Code ou directement en exécutant votre cmd.exe en administrateur</br> puis tapez la commande ` git clone git@github.com:Y-parede-dev/portfolio-v1.0-backend.git `</br>
+>> Placez-vous dans votre environnement de travail avec le terminal vs Code ou directement en exécutant votre cmd.exe en administrateur</br> puis tapez la commande  `git init` puis ` git clone git@github.com:Y-parede-dev/portfolio-v1.0-backend.git `</br>
 >>> :thought_balloon: pour utiliser le ssh vous devez avoir au préalable une clé ssh connecter à votre compte github</br>
 Vous trouverez prochainement ici comment générer une clé ssh et la charger sur github</br>
 </br>
