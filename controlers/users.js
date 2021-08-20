@@ -234,7 +234,7 @@ exports.login = (req, res, next) => {
         const userLog = req.body;
             dataBase.query(`SELECT * FROM ?? WHERE ?? = ?`, ["users","users.mail",`${userLog.mail}`],(err, result)=>{
                 if(err){
-                    throw err
+                    console.log(err)
                 }else {
                     if(result<1){
                         return res.status(404).json({message: "email non reconue"})

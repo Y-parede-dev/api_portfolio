@@ -108,7 +108,6 @@ exports.deleteProject = (req, res, next) => {
       dataBase.query(`SELECT ?? FROM ?? WHERE ?? = ?`, ["projects.img_url", "projects", "projects.id",req.params.id],(err, result)=>{
             if(err) {
                 res.status(404).json({err});
-                throw err;
             }
             else {
                 if(result.length < 1){
@@ -132,6 +131,5 @@ exports.deleteProject = (req, res, next) => {
       )
     } catch (err) {
         res.status(500).json(err);
-        throw err;
     }
 }
