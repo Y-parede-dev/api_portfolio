@@ -6,7 +6,8 @@ const MIME_TYPES = {
     'image/jpg':"jpg",
     'image/jpeg':"jpg",
     'image/png':'png',
-    'image/gif':'gif'
+    'image/gif':'gif',
+    'image/svg+xml':'svg'
 };
 // Creation du stockage pour les images des sauces envoyer par les utilisateur
 const storage = multer.diskStorage({
