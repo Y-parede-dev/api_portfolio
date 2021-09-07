@@ -8,6 +8,7 @@ dotenv.config();
 
 const usersRoutes = require("./routes/users");
 const projectsRoutes = require("./routes/projects");
+const mailRoutes = require("./routes/mail");
 
 
 /*
@@ -41,6 +42,7 @@ app.use(express.json());
 app.use('/api/assets', express.static(path.join(__dirname, "assets")));
 app.use("/api/profil", usersRoutes);
 app.use("/api/projects", projectsRoutes);
+app.use("/api/mail", mailRoutes);
 
 /*app.use("/api/post", postRoutes);
 app.use("/api/auth", usersRoutes);
