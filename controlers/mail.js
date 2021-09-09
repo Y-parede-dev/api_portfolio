@@ -5,7 +5,6 @@ const {google} = require('googleapis');
 dotenv.config();
 exports.sendMailInside = (req, res, next) => {
     const data = req.body;
-
     const oAuth2Client = new google.auth.OAuth2(process.env.MAIL_CLIENT_ID, process.env.MAIL_CLIENT_SECRET, process.env.REDIRECT_URI)
     oAuth2Client.setCredentials({refresh_token: process.env.REFRESH_TOKEN});
 
@@ -25,11 +24,11 @@ exports.sendMailInside = (req, res, next) => {
                 }
             })
             const mailOptions = {
-                from:'TEST 😮😆😮<parede.yoan.amcs@gmail.com>',
+                from:`MAGIN CODE ✔️🌐 <${data.email}>`,
                 to:'magin.code@gmail.com',
                 subject: data.objet,
                 text: data.contenu,
-                html: `<b>Contact Nom</b>:      🙋‍♂️<p style="color:blue"> ${data.nom} </p>
+                html: `<b>Contact Nom</b>:      🙋‍♂️ ${data.nom} 
                     <br/><b>Contact Email</b>:  📧 ${data.email}
                     <br/><b>Contact Sujet</b>:  🧭 ${data.objet} 
                     <br/><br/> <p style="color:#2271DF;font-size:1.3rem">${data.contenu}</p>` // html body  
