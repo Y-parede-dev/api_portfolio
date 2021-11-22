@@ -23,7 +23,7 @@ dataBase.connect(function(error) {
   if (error){
     console.log("Non Connecté à la base de données MySQL!")
   }else{
-    console.log("Connecté à la base de données MySQL!");
+    console.log("Connecté à la base de données MySQL!")
 
   }
 });
