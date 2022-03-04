@@ -21,7 +21,7 @@ const likesRoutes = require("./routes/likes");
 dataBase.connect(function(error) {
 
   if (error){
-    console.log("Non Connecté à la base de données MySQL!")
+    console.log(`"Non Connecté à la base de données MySQL!": ${error}`)
   }else{
     console.log("Connecté à la base de données MySQL!")
 
