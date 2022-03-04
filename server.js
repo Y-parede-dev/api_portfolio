@@ -15,7 +15,7 @@ const normalizePort = val => { //creation du port Normalizer
   return false;
 };
 
-const port = normalizePort(process.env.MODE =='PROD'?process.env.DB_PORT:process.env.DB_PORT_LOCAL);
+const port = normalizePort(process.env.MODE =='PROD'?process.env.DB_PORT:process.env.APP_PORT);
 const portDist = normalizePort(process.env.PORT);
 app.set('port',(portDist || port ));   // ajout du port sur app 
 

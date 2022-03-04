@@ -1,5 +1,4 @@
 const nodemailer = require('nodemailer');  
-const xoauth2 = require('xoauth2');
 const dotenv = require('dotenv');
 const {google} = require('googleapis');
 dotenv.config();
@@ -7,9 +6,7 @@ exports.sendMailInside = (req, res, next) => {
     const data = req.body;
     const oAuth2Client = new google.auth.OAuth2(process.env.MAIL_CLIENT_ID, process.env.MAIL_CLIENT_SECRET, process.env.REDIRECT_URI)
     oAuth2Client.setCredentials({refresh_token: process.env.REFRESH_TOKEN});
-
     async function sendMail() {
-
         try{
             const accesToken = await oAuth2Client.getAccessToken();
             const transport = nodemailer.createTransport({
@@ -41,6 +38,6 @@ exports.sendMailInside = (req, res, next) => {
     }
     sendMail()
         .then(result=>{console.log('email send ... ', result);res.status(200).json({message:" mail send"})})
-        .catch(error=>{console.log('email dont send ... ', error.message);res.status(400).json({message:" mail dont send"})})
+        .catch(error=>{console.log('email dont send ... ', error.message);res.status(400).json({message:" mail dont send", ERROR: error.message})})
 }
  
